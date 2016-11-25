@@ -8,6 +8,10 @@
         p{
             margin: 0;
         }
+        div{
+            display: block;
+            padding: 0px;
+        }
 
         ul{
             margin: 0;
@@ -24,6 +28,7 @@
             margin: 0;
             padding:0;
         }
+
         #topmain{
             width: 100%;
             height: 134px;
@@ -139,19 +144,28 @@
         }
         #bodyMain{
             width:100%;
+            /*
+            background-color: bisque;
+            */
             background:url("body_bg.jpg") 0 0 repeat-x;
-            color: #000;
             padding:35px 0 28px 0;
+            color: #000;
+
         }
         #bodyMain #body{
             width: 958px;
-            margin: 0 auto;
+            /*
+
+            */
             background-attachment: scroll;
             background-repeat: repeat-y;
-            background-position: -23px;
+            margin: 0 auto;
         }
         #left{
             width: 240px;
+            /*
+            float: left;
+            */
             float: left;
         }
         #left dl{
@@ -161,21 +175,21 @@
             background: url("left_head_1px.gif") 0 0 repeat-x;
             border-left: #404040 solid 1px;
             border-right:#404040 solid 1px;
+            color: #F3F3F3;
             padding: 4px 0 0 14px;
-            margin: 0 0 1px 0;
+            margin: 0 0 0px 0;
         }
+
         #left dl dt{
             background: url("arrow.gif") 0 3px no-repeat;
             color: white;
             font-size: 12px;
             padding:0 0 0 16px;
         }
+
         #left ul{
             width: 240px;
             background-color: lightgray;
-        }
-        #left ul li{
-            /*margin:0 0 1px 0;*/
         }
         #left ul li a {
             display: block;
@@ -209,15 +223,44 @@
         }
         #left form{
             display: block;
+            /*
             height: 180px;
+            */
             background-color: #D2D2B4;
-            padding:6px 0 0 0;
+            padding:5px 15px 41px 15px;
         }
         #left form label{
             font-size: 12px;
-            margin: 0 0 0 15px;
+            margin: 10px 0 0 0px;
         }
-
+        #left form input.txtBox{
+            display: block;
+            margin: 3px 0 3px 0px;
+            padding: 0px 0 4px 0;
+            width: 208px;
+        }
+        #left form a{
+            color: #945E02;
+            font-size: 11px;
+        }
+        #left form input.login{
+            background: url("btn_login.gif") 0 0 no-repeat;
+            background-color: #D2D2B4;
+            color: #F2F2E2;
+            float: right;
+            width: 66px;
+            height: 21px;
+            font: bold 11px/21px Arial, Helvetica, sans-serif;
+            border:none;
+        }
+        .spacer{
+            clear: both;
+        }
+        article{
+            width: 695px;
+            float: right;
+            background-color: #0D6C8A;
+        }
     </style>
 </head>
 <body>
@@ -416,9 +459,22 @@
                 </dl>
                 <form name="memberlogin" action="#" method="post">
                     <label>请输入用户名</label>
+                    <input name="name" type="text" class="txtBox" spellcheck="true" autofocus="true">
+                    <label>请输入密码</label>
+                    <input name="password" type="password" class="txtBox">
+                    <a href="#">忘记密码</a>
+                    <input type="submit" name="login" value="登录" class="login">
+
                 </form>
             </div>
+            <article>
+                <section>
+
+                </section>
+            </article>
+            <br class="spacer">
         </div>
+
     </div>
 </body>
 
