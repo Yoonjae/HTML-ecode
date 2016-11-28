@@ -27,6 +27,7 @@
         body{
             margin: 0;
             padding:0;
+
         }
 
         #topmain{
@@ -147,7 +148,7 @@
             /*
             background-color: bisque;
             */
-            background:url("body_bg.jpg") 0 0 repeat-x;
+            background-color: #E8E8D0;
             padding:35px 0 28px 0;
             color: #000;
 
@@ -155,11 +156,10 @@
         #bodyMain #body{
             width: 958px;
             /*
-
             */
-            background-attachment: scroll;
-            background-repeat: repeat-y;
+
             margin: 0 auto;
+            background-color: #E8E8D0;
         }
         #left{
             width: 240px;
@@ -227,7 +227,7 @@
             height: 180px;
             */
             background-color: #D2D2B4;
-            padding:5px 15px 41px 15px;
+            padding:5px 15px 98px 15px;
         }
         #left form label{
             font-size: 12px;
@@ -259,11 +259,90 @@
         article{
             width: 695px;
             float: right;
+        }
+        section{
+            display: block;
+            /*
             background-color: #0D6C8A;
+            */
+        }
+        article section h3{
+            height: 30px;
+            border-bottom: #C5C5A8 solid 1px;
+            font: bold 28px/25px Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        article section label{
+            display: inline-block;
+        }
+        meter{
+            width: 5em;
+            height: 1em;
+        }
+        article p.rightTxt1{
+            display: block;
+            color: #B3770F;
+            background-color: inherit;
+            margin:  0 0 18px 0;
+            font: bold 16px/23px Arial, Helvetica, sans-serif;
+        }
+        article p.rightTxt2{
+            display: block;
+            font: normal 13px/19px Arial, Helvetica, sans-serif;
+            color: #000;
+            background-color: inherit;
+            margin: 0 0 28px 0;
+        }
+        #footerMain{
+            width:100%;
+            height: 109px;
+            background: url("footer_bg.gif") 0 0 repeat-x;
+        }
+        footer{
+            width: 958px;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+        footer ul{
+            left: 258px;
+            position: absolute;
+            top: 18px;
+            width: 712px;
+        }
+        footer ul li{
+            float: left;
+            /*
+            display: inline-block;
+            */
+        }
+        footer ul li a{
+            color: #F3F3F3;
+            background-color: inherit;
+            font-size: 13px;
+            text-decoration: none;
+            padding: 0 8px;
+            clear: both;
+            line-height: normal;
+        }
+        .copyright{
+            display: block;
+            position: absolute;
+            left: 265px;
+            top: 38px;
+            color: #FEDC3B;
+            font: normal 11px/18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+        }
+        .designer{
+            position: absolute;
+            left: 265px;
+            top: 58px;
+            color: #F5F5C7;
+            font: bold 17px/18px "Trebuchet MS", Arial, Helvetica, sans-serif;
         }
     </style>
 </head>
-<body>
+<body onload="toTop()">
     <div id="topmain">
         <div id="top">
             <a href="#">
@@ -464,18 +543,97 @@
                     <input name="password" type="password" class="txtBox">
                     <a href="#">忘记密码</a>
                     <input type="submit" name="login" value="登录" class="login">
-
                 </form>
             </div>
             <article>
                 <section>
-
+                    <header>
+                        <h3>
+                            敏感窘境 肌肤正在经历的事
+                            <label style="font-size: 13px;font-weight: 100">
+                                热度:
+                                <meter style="font-size: 13px" value="50" max="100" min="0" low="10" high="85" title="热度"></meter>
+                            </label>
+                        </h3>
+                    </header>
+                    <p class="rightTxt1">早春换季时，肌肤也跟着焕活了新生命，随之杂草丛生，泛红、痘痘、脱皮，一系列的敏感状况也随之而来，如何帮助肌肤度过换季窘境，下面的几句话，肯定对你有所帮助。</p>
+                    <p class="rightTxt2">有些油性肌肤的女生或者痘痘肌肤，到了换季的时候，长痘情况更加猖獗。然而大多数此类女生，都会把痘痘原因跟肌肤冒油和角质层堆积联系到一起。然后就开始连番的清洁和去角质工作，可是痘痘不但没有消退，反而更加严重</p>
+                    <p class="rightTxt2">这时你就要警惕，痘痘原因也有可能是敏感所致。<br>
+                        如果你不幸栖身敏感痘痘肌，那么单纯的去角质和清洁就很难达到改善痘痘的情况。反而会因为过度清洁和去角质，造成肌肤耐受力持续走低，敏感痘痘更严重。</p>
+                </section>
+                <section>
+                    <header>
+                        <h3>
+                            新iPad首发销量再破纪录
+                            <label style="font-size: 13px;font-weight: 100">
+                                热度:
+                                <meter style="font-size: 13px" value="50" max="100" min="0" low="10" high="85" title="热度"></meter>
+                            </label>
+                        </h3>
+                    </header>
+                    <p class="rightTxt2">当苹果的新iPad发布以后，相信很多黄牛们都开始在摩拳擦掌，希望能在新iPad的浪潮中狠狠地大赚一笔，不过由于苹果采用了抽签购买的方式，所以我们并没有在香港新iPad首发时看到熟悉的排场龙的情景出现。</p>
+                    <p class="rightTxt2">好了，你可能会有一个疑问，一部居然要抽奖才能买到的平板电脑（对，抽中了还是要付全价），到底能有多少人会购买呢？在发售一个星期之后我们有了答案，Apple 宣布新iPad自上周五开卖至今已卖出 300 万部，对比前作，第一代 iPad 的销量，其在首发后第28天才仅仅卖出 100 万部，可以说新iPad在销售速度上还是远远抛离两位老大哥。</p>
+                </section>
+                <section>
+                    <header>
+                        <h3>
+                            中国移动互联网应用处理器市场发展现状
+                            <label style="font-size: 13px;font-weight: 100">
+                                热度:
+                                <meter style="font-size: 13px" value="50" max="100" min="0" low="10" high="85" title="热度"></meter>
+                            </label>
+                        </h3>
+                    </header>
+                    <p class="rightTxt2">移动互联网终端就是通过无线技术接入互联网的终端设备，可实现移动多媒体与互联网的无缝连接。移动互联网终端主要包括智能手机和平板电脑两大类产品。</p>
+                    <p class="rightTxt2">2011年全球移动互联网终端应用处理器市场销售额已达到77.1亿美元，同比增长49.7%。从应用结构来看，2011年智能手机应用处理器市场的销售额为68.0亿美元，占整个市场88.2%的份额。从品牌结构来看，2011年Qualcomm在全球移动互联网终端应用处理器市场中排名第一，销售额达35.0亿美元，市场份额为45.4%；Apple以23.6%的市场份额排名第二；TI则以16.6%的市场份额排名第三。全球移动通信网络已经迈进3G时代并逐步向LTE演进，随着移动终端软件和应用服务的不断增多，大众对终端产品的需求量将持续增长。预计到2016年，全球移动互联网终端应用处理器市场规模将达到372.3亿美元，年均复合增长率为37.0%。</p>
                 </section>
             </article>
             <br class="spacer">
         </div>
 
     </div>
+    <div id="footerMain">
+        <footer>
+            <ul>
+                <li>
+                    <a href="#">博客首页</a>
+                </li>
+                <li>
+                    <a href="#">关于我们</a>
+                </li>
+                <li>
+                    <a href="#">服务</a>
+                </li>
+                <li>
+                    <a href="#">博客问题</a>
+                </li>
+                <li>
+                    <a href="#">推荐博客</a>
+                </li>
+                <li>
+                    <a href="#">博客文章</a>
+                </li>
+                <li>
+                    <a href="#">网上工作</a>
+                </li>
+                <li>
+                    <a href="#">博客登录</a>
+                </li>
+                <li>
+                    <a href="#">提交留言</a>
+                </li>
+                <li>
+                    <a href="#">联系我们</a>
+                </li>
+            </ul>
+            <p class="copyright">Copyright (c) ecode 2012. All Rights Reserved.</p>
+            <p class="designer">设计者 :Template World</p>
+        </footer>
+    </div>
 </body>
-
+<script>
+    function toTop() {
+        window.scrollTo(0,0);
+    }
+</script>
 </html>
